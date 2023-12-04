@@ -1,6 +1,7 @@
 package com.parking.parkinglot.entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
@@ -9,6 +10,7 @@ public class Car {
     @ManyToOne
     private User owner;
     @Id
+    @GeneratedValue
     private Long id;
     private String licensePlate;
 
