@@ -1,4 +1,4 @@
-package com.parking.parkinglot;
+package servlets.users;
 
 import com.parking.parkinglot.common.CarDto;
 import com.parking.parkinglot.common.UserDto;
@@ -27,7 +27,7 @@ public class Users extends HttpServlet {
         List<UserDto> users=usersBean.findAllUsers();
         request.setAttribute("activePage","Users");
         request.setAttribute("users",users);
-        request.getRequestDispatcher("/WEB-INF/pages/users.jsp").forward(request,response);
+        request.getRequestDispatcher("/WEB-INF/pages/users/users.jsp").forward(request,response);
     }
 
     @Override

@@ -15,6 +15,7 @@
       User</a>
 
   </c:if>
+  <button type="button" class="btn btn-secondary">Invoice</button>
   <div class="container text-center">
     <c:forEach var="user" items="${users}">
       <div class="row">
